@@ -11,6 +11,7 @@ import pandas as pd
 servico = Service(ChromeDriverManager().install())
 navegador = webdriver.Chrome(service=servico)
 
+tabela = pd.read_excel("Processos.xlsx")
 caminho = os.getcwd()
 arquivo = caminho + r"\index.html"
 
